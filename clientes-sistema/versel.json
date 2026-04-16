@@ -6,11 +6,9 @@
       "use": "@vercel/node"
     },
     {
-      "src": "package.json",
+      "src": "clientes-sistema/package.json",
       "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
+      "config": { "distDir": "dist" }
     }
   ],
   "routes": [
@@ -20,7 +18,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/dist/index.html"
+      "dest": "/clientes-sistema/$1"
     }
   ]
 }
